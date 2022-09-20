@@ -82,8 +82,8 @@ AB
 			for(int j=0;j<i;j++) {			//0부터 시작; i보다 숫자가 적을시; j는 1씩 증가
 				System.out.print(" ");		//앞의 부분을 띄어 오른쪽 정렬이 될 수 있도록 밑의 for문이 한번 돌 때마다 띄어쓰기를 해준다.
 			}
-			for(int a='A'+i;a<='Z';a++) {	//A+i(A+0(A),A+1(B),A+2(C),A+3(D)...)부터 시작 초기치에 연산을 하기위해 int 사용;
-				System.out.print((char)a);	//한 글자로 나타내야 하므로 int를 char로 캐스팅해준다. 자동캐스팅이 되지 않으니 수동캐스팅 해야함. char 없을 시 코드로 나옴
+			for(int a='A'+i;a<='Z';a++) {	//A+i(A+0(A),A+1(B),A+2(C),A+3(D)...)부터 시작 초기치 연산은 int나 char로 하나로 맞춰줘야 하기 때문에 int로 맞춤;
+				System.out.print((char)a);	//한 글자(문자)로 나타내야 하므로 int를 char로 캐스팅해준다. 자동캐스팅이 되지 않으니 수동캐스팅 해야함. char 없을 시 코드로 나옴
 			}
 			System.out.println();
 		}
