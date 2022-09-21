@@ -9,7 +9,7 @@ public class Ex04_성적 {
 		// 
 		Scanner sc=new Scanner(System.in);
 		
-		int kor[]=new int[4];		//5명의 학생의 점수를 저장할 배열 선언
+		int kor[]=new int[5];		//5명의 학생의 점수를 저장할 배열 선언
 		int sum=0;					//학생들의 총점 구할 변수 선언 
 		
 		/*

@@ -12,7 +12,7 @@ public class Ex03_방탈출1 {
 결과 : 4000
 
 		int count=0;
-		
+
 		for(int i=1; i<=10000; i++) {
 			int j=i;
 			while(j!=0) {
@@ -26,54 +26,40 @@ public class Ex03_방탈출1 {
 		}
 		System.out.println(count);
 		 */	
-		int count=0;
-		for(int i=1; i<10001; i++) {
-			int j=i;
-			while(j!=0) {
-				int pal=j%10;
-				if(pal==8) {
-					count++;
-				}
-				j=j/10;
-			}
-		}
-		System.out.println(count);
-		System.out.println("-------------------------------");
-		
-		for(int i=1; i<51; i++) {
-			int j=i;
-			boolean jt=false;
-			while(j!=0) {
-				int sam=j%10;
-				if(sam==3|sam==6|sam==9) {
-					System.out.print("짝");
-					jt=true;
-				}
-				j=j/10;
-			}
-			if(jt) System.out.println();
-			else System.out.println(i);
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		int sum = 0;
+
+		for(int i = 1; i <= 10000; i++) {
+			String s = String.valueOf(i);
+
+			for (int j = 0; j < s.length();j++) {
+				if(s.charAt(j) == '8') {
+					sum+=1;
+				}//if
+
+			}//for
+		}//for
+		System.out.println(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 
 }
