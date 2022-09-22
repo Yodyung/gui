@@ -15,27 +15,27 @@ public class 메소드test {
 리턴(반환) : char		 
 		 */
 
-		boolean a=lower('a');
-		boolean b=lower('A');
+		boolean a=checklower('a');
+		boolean b=checklower('A');
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println("=====================");
-		char aa=upper('Z');
-		char bb=upper('d');
+		char aa=checkupper('Z');
+		char bb=checkupper('d');
 		System.out.println(aa);
 		System.out.println(bb);
 		
 		
 	}
 
-	static boolean lower(char a) {
+	static boolean checklower(char a) {
 		boolean b=false;
 		if(Character.isLowerCase(a)) b=true;
 		else b=false;
 		return b;
 	}
 	
-	static char upper(char a) {
+	static char checkupper(char a) {
 		if(Character.isLowerCase(a)) a=Character.toUpperCase(a);
 		return a;
 	}
