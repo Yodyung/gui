@@ -23,7 +23,7 @@ class Bank{
 	String yeGumJu="예사랑";
 	String number="123-456-789";
 	int janAek;
-	
+
 	@Override
 	public String toString() {
 		return "Bank [예금주=" + yeGumJu + ", 계좌번호=" + number + ", 잔액=" + janAek + "원]";
@@ -33,7 +33,7 @@ class Bank{
 		janAek=janAek+ipgm;
 		System.out.println("입금하신 금액은 "+ipgm+"원 입니다. 잔액은 "+janAek+"원 입니다.");
 	}
-	
+
 	public void withdrawal(int chulgm) {	//출금(인출)
 		janAek=janAek-chulgm;
 		if(janAek>=0) {
@@ -43,12 +43,12 @@ class Bank{
 			System.out.println("잔액이 부족합니다.");
 		}
 	} 
-	
+
 }
 public class Test2 {
 	public static void main(String[] args) {
 		Bank b=new Bank();
-		
+
 		b.deposit(2000);
 		b.deposit(6000);
 		b.withdrawal(100);
