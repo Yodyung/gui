@@ -74,6 +74,10 @@ public class CalTest2 {
 	}//addlayout end
 
 	public void EventProc() {
+		//(1) 이벤트 핸들러 만들기/핸들러 : 이벤트 처리 클래스
+		//(2) 핸들러 객체 생성	
+		//(3) 이벤트가 발생할 컴포넌트와 연결
+		
 		//하트 버튼를 눌렀을 때
 		sarah.addActionListener(new ActionListener(){						//이너 클래스, 이벤트는 이너클래스로 많이 작업한다.
 			public void actionPerformed(ActionEvent e) {		  			//액션리스너 클래스는 추상클래스라서 메소드를 똑같이 상속 받아서 쓴다.
