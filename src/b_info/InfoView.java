@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -97,7 +98,7 @@ public class InfoView {
 		f.add(jpwest, BorderLayout.WEST);	//보더 레이아웃의 왼쪽에 위치 선언
 
 		//오른쪽 붙히기
-		f.add(ta,BorderLayout.CENTER);		//보더 레이아웃의 가운데쪽에 위치 선언
+		f.add(new JScrollPane(ta),BorderLayout.CENTER);		//보더 레이아웃의 가운데쪽에 위치 선언
 
 		f.setBounds(100,100,500,350);		//사이트의 크기 설정
 		f.setVisible(true);					//true이기 때문에 프로그램이 보이게 작동함
